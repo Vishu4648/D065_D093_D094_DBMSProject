@@ -1,29 +1,18 @@
 # DBMS-project
-Thanks! Based on your detailed project report for the **Expense Tracker** system, here's a custom and professional `README.md` file tailored specifically for your GitHub repository.
+# Expense Tracker - DBMS Project
 
----
-
-### ✅ `README.md` (Markdown Format)
-
-```markdown
-# 💸 Expense Tracker - DBMS Project
-
-## 📚 Project Overview
+## Project Overview
 This **Expense Tracker** is a database-driven system designed to help users manage, track, and analyze their personal finances efficiently. It includes features like budgeting, recurring expense tracking, credit monitoring, and detailed report generation. The project was developed as part of the **Database Management System (DBMS)** coursework in the 4th semester of the B.Tech Computer Engineering program at **SVKM’s NMIMS, Indore Campus**.
 
----
-
-## 👩‍💻 Team Members
+## Team Members
 
 | Roll No | Name              | Contribution                                                                 |
 |---------|-------------------|------------------------------------------------------------------------------|
 | D065    | Pratikshya Dash   | ER Diagram, Creating Database, Performing SQL Queries                        |
-| D093    | Vaishnavi Gandhi  | Documentation, Performing SQL Queries                                       |
+| D093    | Vaishnavi Gandhi  | Documentation, Performing SQL Queries                                        |
 | D094    | Vansh Ray Jain    | ER to Relational Schema Conversion, Performing SQL Queries                   |
 
----
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **DBMS:** MySQL
 - **Query Language:** SQL
@@ -31,9 +20,7 @@ This **Expense Tracker** is a database-driven system designed to help users mana
 - **Report Writing:** MS Word
 - **GitHub for Collaboration**
 
----
-
-## 🧱 Database Design
+## Database Design
 
 The system includes multiple entities like:
 - **Users, Expenses, Categories, Subcategories**
@@ -42,9 +29,7 @@ The system includes multiple entities like:
 
 The database is fully normalized up to **3NF** and supports **foreign key constraints** to maintain data integrity.
 
----
-
-## 🖼️ ER Diagram & Relational Model
+## ER Diagram & Relational Model
 
 The Entity-Relationship (ER) Diagram models real-world relationships such as:
 - Users having multiple expenses
@@ -53,9 +38,7 @@ The Entity-Relationship (ER) Diagram models real-world relationships such as:
 
 The **Relational Schema** was derived from the ERD and implemented using SQL DDL commands.
 
----
-
-## 🔢 SQL Implementation
+## SQL Implementation
 
 - **Tables Created:** 12+
 - **Sample Data:** 10 entries per table
@@ -68,9 +51,7 @@ The **Relational Schema** was derived from the ERD and implemented using SQL DDL
   - Transactions
   - User Creation & Privilege Management
 
----
-
-## 📈 Key Functionalities
+## Key Functionalities
 
 - Record expenses with categories & subcategories
 - Set budgets with alerts for overspending
@@ -78,9 +59,7 @@ The **Relational Schema** was derived from the ERD and implemented using SQL DDL
 - Generate financial reports (monthly/category-wise)
 - Simulate real-world SQL use cases
 
----
-
-## 📋 How to Use
+## How to Use
 
 ### 1. Setup MySQL Database
 ```sql
@@ -88,16 +67,13 @@ CREATE DATABASE expense_tracker;
 USE expense_tracker;
 -- Then run the SQL DDL & INSERT scripts (included in this repo)
 ```
-
 ### 2. Table Creation & Data Insertion
-All tables and insert queries are available in `database.sql` or `schema.sql`.
+All tables and insert queries are available in `DBMS Project.sql` or `project.sql`.
 
 ### 3. Running Queries
 Use MySQL CLI or phpMyAdmin to run the SQL queries from `queries.sql`.
 
----
-
-## 🔒 User Management & Access Control
+## User Management & Access Control
 
 ```sql
 -- Create users
@@ -109,9 +85,7 @@ GRANT SELECT ON expense_tracker.expenses TO 'analytics_user'@'localhost';
 GRANT ALL PRIVILEGES ON expense_tracker.* TO 'admin_user'@'localhost';
 ```
 
----
-
-## 🧠 Learning & Highlights
+## Learning & Highlights
 
 - **Practical DBMS Design**
 - **Advanced SQL Techniques**
@@ -119,28 +93,16 @@ GRANT ALL PRIVILEGES ON expense_tracker.* TO 'admin_user'@'localhost';
 - **Normalization & Data Integrity**
 - **Hands-on MySQL Implementation**
 
----
-
-## 🎯 Future Enhancements
+## Future Enhancements
 - Add web UI for real-time interaction
 - Visual dashboards using charts (e.g., Chart.js)
 - Export to Excel/PDF
 - Integration with mobile apps
 
----
+## GitHub Repository
 
-## 🔗 GitHub Repository
+[Click Here to View Project] - (https://github.com/Vishu4648/D065_D093_D094_DBMSProject.git)
 
-[Click Here to View Project](https://github.com/Vishu4648/D065_D093_D094_DBMSProject.git)
-
----
-
-## 📄 License
+## License
 
 This project is intended for academic and educational purposes only. All rights reserved by the authors.
-
-```
-
----
-
-Would you like this as a downloadable `README.md` file? I can generate and send it right away!
