@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spend Wise - Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0b6838;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0b6838;
+    }
+
+    .container {
+      width: 400px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0b6838;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #0b6838;
+      box-shadow: 0 0 5px rgba(11,104,56,0.4);
+    }
+
+    button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      border: none;
+      background-color: #0b6838;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0a5c33;
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Spend Wise</div>
+    <nav>
+      <a href="dashboard1.html">Dashboard</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact</a>
+      <a href="index.html">Account</a>
+      <a href="login.html">Login here</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Create an Account</h2>
+    <form method="POST" action="/register" onsubmit="return validateForm()">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" minlength="6" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="footer">
+      Already have an account? <a href="login.html">Login here</a>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const mobile = document.getElementById('mobile').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      if (!name || !mobile || !email || !password) {
+        alert("All fields are required.");
+        return false;
+      }
+      if (mobile.length !== 10 || isNaN(mobile)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
